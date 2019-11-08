@@ -11,6 +11,7 @@ const App = () => {
     axios.get('https://cors-anywhere.herokuapp.com/https://swapi.co/api/people')
       .then(response => {
         console.log(response.data);
+        setCharatersData(response.data.results);
       })
       .catch(error => {
         console.log(error.message);
