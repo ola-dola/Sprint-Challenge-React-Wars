@@ -1,19 +1,17 @@
 import React from 'react';
-import { Card, CardTitle, CardText, CardImg, CardImgOverlay } from 'reactstrap';
+import { Card, CardTitle, CardText, CardHeader } from 'reactstrap';
 
 function CharacterCard({ data }) {
   return (
     <div>
-      <Card inverse>
-        <CardImg width="100%" src="/assets/logo.png" alt="Card image cap" />
-        <CardImgOverlay>
-          <CardTitle>Name: {data.name}</CardTitle>
-          <CardText>Height: {data.height}</CardText>
-          <CardText>Mass: {data.mass}</CardText>
-          <CardText>Hair Color: {data.hair_color}</CardText>
-          <CardText>Birth Year: {data.birth_year}</CardText>
-          <CardText>Number of films: {data.films.length}</CardText>
-        </CardImgOverlay>
+      <Card className="cardOla">
+        <CardHeader tag="h2" >{data.name}</CardHeader>
+        <CardTitle>Name: {data.name}</CardTitle>
+        <CardText>Height: {data.height}</CardText>
+        <CardText>Mass: {data.mass}</CardText>
+        <CardText>Hair Color: {data.hair_color}</CardText>
+        <CardText>Birth Year: {data.birth_year}</CardText>
+        <CardText>Number of films: {data.films.length}</CardText>
       </Card>
     </div>
   )
