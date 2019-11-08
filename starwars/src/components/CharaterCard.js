@@ -5,7 +5,7 @@ function CharacterCard({ data }) {
   return (
     <div>
       <Card inverse>
-        <CardImg width="100%" src="/assets/318x270.svg" alt="Card image cap" />
+        <CardImg width="100%" src="/assets/logo.png" alt="Card image cap" />
         <CardImgOverlay>
           <CardTitle>Name: {data.name}</CardTitle>
           <CardText>Height: {data.height}</CardText>
