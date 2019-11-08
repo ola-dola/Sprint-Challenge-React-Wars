@@ -1,13 +1,13 @@
 import React from 'react';
 
-function CharacterCard (props) {
+function CharacterCard ({data}) {
   return (
     <div>
-      <h3>Name: {props.name}</h3>
-      <p>Height: {props.height}</p>
-      <p>Mass: {props.mass}</p>
-      <p>Hair Color: {props.hair_color}</p>
-      <p>Number of films: {props.films.length}</p>
+      <h3>Name: {data.name}</h3>
+      <p>Height: {data.height}</p>
+      <p>Mass: {data.mass}</p>
+      <p>Hair Color: {data.hair_color}</p>
+      {/* <p>Number of films: {data.films.length}</p> */}
     </div>
   )
 }

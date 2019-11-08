@@ -1,10 +1,10 @@
 import React from 'react';
 import CharacterCard from './CharaterCard';
 
-function CharactersList({data}) {
+function CharactersList({ charactersData}) {
   return (
-    data.map(() => {
-      <CharacterCard data={data}/>
+    charactersData.map((character, index) => {
+      return <CharacterCard data={character} key={index}/>
     })
   )
 }
